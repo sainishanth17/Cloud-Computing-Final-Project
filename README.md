@@ -1,5 +1,4 @@
-# 3640-final-project
-My final term project for ACIT-3640-Cloud Computing - deploying [Social Something](https://github.com/sam-meech-ward-bcit/social_something_full) on AWS as a fully scalable web application using Terraform and Packer.
+
 
 # Infrastructure Diagram
 ![infrastructure diagram](https://raw.githubusercontent.com/confy/3640-final-project/main/infra_diagram.png)
