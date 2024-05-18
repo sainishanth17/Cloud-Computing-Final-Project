@@ -1,0 +1,13 @@
+write_files:
+  - path: /home/ec2-user/social_something_full-master/app.env
+    owner: ec2-user:ec2-user
+    permissions: "0644"
+    content: |
+      MYSQL_HOST='${database_host}' 
+      MYSQL_USER='${database_user}' 
+      MYSQL_PASSWORD='${database_pass}' 
+      MYSQL_DATABASE='${database_name}'
+      BUCKET_NAME='${bucket_name}'
+      BUCKET_REGION='${region}'
+runcmd:
+  - [ systemctl, restart, --no-block, socialsomething.service ]
